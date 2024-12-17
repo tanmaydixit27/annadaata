@@ -1,0 +1,47 @@
+/* src/components/LiveRates.css */
+
+.live-rates-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .grains-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .grain-card {
+    margin-top: 20px;
+    width: 250px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .quantity-input {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .add-to-cart-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .search-input {
+    margin-bottom: 80px;
+    max-width: 500px;
+  }
+  
+  .no-results {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+  }
+  

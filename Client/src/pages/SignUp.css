@@ -1,0 +1,27 @@
+.sign-up-container {
+    background-color: #f5f5f5; /* Light background for better visibility */
+  }
+  
+  .sign-up-box {
+    background-color: #fff;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sign-up-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sign-up-input {
+    margin-bottom: 16px;
+  }
+  
+  .sign-up-button {
+    background-color: #4caf50; /* Example button color */
+    color: white;
+    padding: 12px;
+  }
+  

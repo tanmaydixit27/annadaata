@@ -1,0 +1,35 @@
+/* src/components/BookFertilizer.css */
+
+.book-fertilizer-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .fertilizers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .fertilizer-card {
+    width: 250px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .quantity-input {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .add-to-cart-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+  

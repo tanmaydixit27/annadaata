@@ -1,0 +1,9 @@
+/* In src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #fffacd; 
+    margin: 0;
+    font-family: Arial, sans-serif; 
+  }
+  

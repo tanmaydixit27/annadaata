@@ -1,0 +1,45 @@
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.love {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.social-links a {
+  color: #555;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #333; /* GitHub Black */
+}
+
+.social-links a[aria-label="LinkedIn"]:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-links a[aria-label="Gmail"]:hover {
+  color: #d44638; /* Gmail Red */
+}
+
+.social-links a[aria-label="Instagram"]:hover {
+  color: #e4405f; /* Instagram Pink */
+}

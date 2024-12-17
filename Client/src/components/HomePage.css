@@ -1,0 +1,77 @@
+.about-section {
+  background-color: #a33c2f;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.opening-hours-section {
+  background-image: url('../assets/opening-hours.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: white;
+  position: relative;
+}
+
+.opening-hours-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.opening-hours-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.services-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+}

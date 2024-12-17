@@ -1,0 +1,179 @@
+/* General navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fffacd; /* Changed to light yellow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Brand logo and name container */
+.navbar-left {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of logo and text */
+  padding-right: 300px; 
+}
+
+.logo-navbar {
+  width: 40px; /* Adjust size of the logo */
+  height: auto; 
+  margin-top: 10px;
+  margin-right: 10px; /* Space between logo and brand name */
+  object-fit: contain; /* Ensures logo maintains aspect ratio */
+}
+
+/* Brand name (center) styling */
+.brand-name {
+  font-family: 'Inter', sans-serif; /* Font applied here */
+  font-weight: 700;                 /* Adjust the weight */
+  font-size: 2.5rem;                /* Font size - large for emphasis */
+  color: #333;                      /* Font color */
+  letter-spacing: 2px;              /* Space between letters for a cleaner look */
+  text-transform: uppercase;        /* Make the brand name uppercase */
+  position: relative;               /* For positioning pseudo-elements */
+  transition: all 0.3s ease;   
+}
+
+.brand-name:hover {
+  color: #27ae60;                   /* Change color to a green shade on hover */
+  letter-spacing: 5px;               /* Increase letter spacing for effect */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+}
+
+.brand-name::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #27ae60; /* Green underline */
+  bottom: -5px;               /* Position it slightly below the text */
+  left: 0;
+  transition: width 0.3s ease; /* Smooth transition for underline */
+}
+
+.brand-name:hover::after {
+  width: 100%;                 /* Full-width underline on hover */
+}
+
+/* Login button styling */
+.login-link {
+  font-size: 1rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #ff5c5c; /* Highlight color on hover */
+}
+
+/* Navbar menu styling */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+/* Link styling */
+.nav-link {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #27ae60; /* Green underline */
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expands underline on hover */
+}
+
+.nav-link:hover {
+  color: #27ae60; /* Changes text color on hover */
+}
+
+/* Styling for the "My Profile" button */
+.user-menu-btn {
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-menu-btn:hover {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Styling for the dropdown menu items */
+.menu-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.menu-item svg {
+  margin-right: 10px;
+}
+
+.menu-item a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item a:hover {
+  color: #27ae60;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide menu on mobile, can be replaced with a hamburger menu */
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .login-link {
+    font-size: 0.9rem;
+  }
+}
